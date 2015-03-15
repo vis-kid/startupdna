@@ -44,9 +44,10 @@
 .post-link {
   font-size: 30px;
   line-height: 1.25;
+  color: $light_blue;
   &:hover {
-    color: $red;
-    border-bottom: 2px solid $red;
+    color: $light_blue;
+    border-bottom: 2px solid $light_blue;
   }
 }
 

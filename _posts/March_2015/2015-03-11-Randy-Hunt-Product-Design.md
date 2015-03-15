@@ -5,7 +5,7 @@ date:   2015-03-11 19:05:00
 excerpt: '( 7 min read )'
 
 small_player_SC_id: 195009424  
-folder_image_path: Randy_J_Hunt/Randy_J_Hunt_Red.jpg
+folder_image_path: Randy_J_Hunt/Randy_J_Hunt_Red_green.jpg
 image_alt: Randy J. Hunt
 ---
 

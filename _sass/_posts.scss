@@ -5,7 +5,7 @@
 
 .post-title {
   font-size: 38px;
-  color: $red;
+  color: $light_blue;
   letter-spacing: -1px;
   line-height: 1.25;
   margin-bottom: 42px;
@@ -70,7 +70,7 @@ h3.interviewee_name {
 a.show_note_link {
   text-decoration: none;
   &:hover {
-    color: $red;
+    color: $light_blue;
   }
 }
 
