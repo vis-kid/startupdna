@@ -1,10 +1,10 @@
 ---
 layout: page
 title:  "Transcription | Randy J. Hunt | Product design"
-date:   2015-03-11 19:05:00
+date:   2015-03-07 19:05:00
 excerpt: '( 7 min read )'
 
-small_player_SC_id: 195009424  
+interviewee01_SC_mini_id: 196166926 
 folder_image_path: Randy_J_Hunt/Randy_J_Hunt_Red_green.jpg
 image_alt: Randy J. Hunt
 ---

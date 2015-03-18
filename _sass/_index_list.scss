@@ -26,7 +26,7 @@
 
 .post-list li {
   border-bottom: 1px solid rgba($grey-color-dark, 0.1);
-  padding-bottom: 7px;
+  padding-bottom: 35px;
   margin-bottom: 50px;
   @media (min-width: 1000px) {
     margin-bottom: 49px;
@@ -55,7 +55,7 @@ h3.list-keywords {
   color: $grey-color-dark;
   font-size: 20px;
   line-height: 1.55;
-  margin-bottom: 42px;
+  margin-bottom: 10px;
 }
 
 span.post-meta {
@@ -65,4 +65,12 @@ span.post-meta {
 
 .post-meta {
   color: lighten($grey-color, 20%);
+}
+
+.video_preview {
+  margin-bottom: 15px;
+}
+
+.page-content {
+  margin-top: 100px;
 }

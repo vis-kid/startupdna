@@ -10,9 +10,9 @@ layout: default
   
 	<img src="/assets/transcriptions/{{page.folder_image_path}}" alt="{{page.image_alt}}">
 
-	<section id='mini_player'>
-    <iframe width="80%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ page.small_player_SC_id }}&amp;color=3B7DEE&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_playcount=false&amp;download=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-  </section>
+  {% if page.interviewee01_SC_mini_id %}
+    {% include soundcloud_mini_iframe_post.html %}
+  {% endif %}
 
   <article class="post-content">
     {{ content }}

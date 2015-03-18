@@ -1,37 +1,45 @@
 .site-header {
-  border-top: 2px solid $light_blue;
+  border-top: 2px solid white;
+	background-color: #3C7EEE;
 // Positioning context for the mobile navigation icon
   position: relative;
+	border-bottom: 2px solid darken(#3C7EEE, 20%);
 }
 
 .site-header .wrapper {
   margin-top: 20px;
+	height: 80px;
+  max-width: 800px;
 }
 
-.red_pipe {
-  color: $light_blue;
-}
+$icon-font-name: ribbon;
 
 a.site-title {
   text-decoration: none;
-  color: $grey-color-dark;
-  &::first-letter {
-    color: $light_blue;
-  }
-  &:nth-child(-2) {
-    color: $light_blue;
+  color: white;
+  @font-face {
+    font-family: 'Ribbon';
+    src: url(asset_path('fonts/#{$icon-font-name}.eot'));
+    src: url(asset_path('fonts/#{$icon-font-name}.woff')) format('woff'),
+         url(asset_path('fonts/#{$icon-font-name}.ttf')) format('truetype'),
+         url(asset_path('fonts/#{$icon-font-name}.svg#glyphicons-halflingsregular')) format('svg');
   }
   &:hover {
-    color: $light_blue;
+    opacity: 0.85;
   }
 }
 
 .site-title {
-  font-size: 28px;
-  line-height: 56px;
+  font-size: 90px;
+  //text-align: center;
+  line-height: 110px;
+  font-family: Ribbon;
   letter-spacing: -1px;
   margin-bottom: 0px;
-  margin-left: -2px;
+  margin-top: -102px;
+  margin-left: -6px;
+  padding-left: $spacing-unit; 
+  padding-top: 59px;
   float: left;
   @include media-query($on-laptop) {
     margin-left: 0px;
@@ -40,18 +48,18 @@ a.site-title {
 
 .site-nav {
   float: right;
-  margin-top: 12px;
+  margin-top: 60px;
+	margin-right: 33px;
   .menu-icon {
     display: none;
   }
   .page-link {
-    color: $grey-color-dark;
+    color: $light_blue;
     font-weight: 400;
     font-size: 20px;
     line-height: $base-line-height;
     &:hover {
-      color: $light_blue;
-      border-bottom: 1px solid $light_blue;
+      border-bottom: 1px solid $light_blue
     }
 // Gaps between nav items, but not on the first one
     &:not(:first-child) {
@@ -60,7 +68,7 @@ a.site-title {
     }
     @include media-query($on-palm) {
       &:hover {
-        color: $red;
+        color: $light_blue;
         border-bottom: none;
       }
     }

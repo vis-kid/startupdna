@@ -40,15 +40,10 @@
   padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: 1px solid rgba($grey-color-dark, 0.1);
-  &:last-child {
-    border-bottom: none; 
-    margin-bottom: 92px;
-    padding-bottom: 12px;
-  }
 }
 
 .episode_number {
-  font-size: 18px;
+  font-size: 20px;
   color: lighten($grey-color, 20%);
   margin-bottom: 2px;
 }
@@ -64,7 +59,7 @@ h3.interviewee_name {
   color: $light_blue;
   font-style: italic;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 a.show_note_link {
@@ -94,9 +89,10 @@ p.post-meta {
 }
 
 .post .post-meta {
-  font-size: 24px;
+  font-size: 20px;
   color: $light_blue;
   margin-bottom: 42px;
+	margin-top: 84px;
 }
 
 article.post-content {
@@ -109,4 +105,10 @@ article.post-content {
   margin-top: 33px;
   margin-bottom: 1px;
   color: lighten($grey-color, 20%);
+}
+
+#post_podcast_link {
+	&:hover {
+    border-bottom: 1px solid $light_blue;
+	}
 }

@@ -2,109 +2,27 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
+
   {% if page.interviewee01_name %}
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <!-- <h1 class="post-title">{{ page.title }}</h1> -->
+
+    <div id='episode_wrapper'>
+    {% if page.interviewee01_vimeo_id %} 
+  	  {% include vimeo_iframe_post.html %}
+    {% endif %}
+  
+    {% if page.interviewee01_SC_id %}
+  	  {% include soundcloud_iframe_post.html %}
+    {% endif %}
+    </div>
+
   {% else %}
-    <p class="post-meta-small">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% include article_header_post.html %}
+
   {% endif %}
-  </header>
-
-{% if page.interviewee01_name %}
-  <div id='episode_wrapper'>
-
-  {% if page.interviewee01_name %}
-    <article class='episode_wrapper'>
-        <h5 class='episode_number'>#{{ page.interviewee01_episode_number }}</h5>
-        <h2 class='keywords'>{{ page.interviewee01_keywords }}</h2>
-        <h3 class='interviewee_name'>{{ page.interviewee01_name }}
-          <span class='episode_sub_info'>&nbsp| {{ page.interviewee01_episode_length }} Minutes</span>
-          <span class='episode_sub_info'>&nbsp| Audio Quality: {{ page.interviewee01_episode_audio_quality }}</span>
-          <a class='episode_sub_info show_note_link' 
-            target='_blank'
-            href='{{ page.interviewee01_episode_shownotes }}'>&nbsp| Show Notes &rarr; </a>
-        </h3>
-
-				<iframe src="https://player.vimeo.com/video/{{page.interviewee01_vimeo_id}}?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-    </article>
-  {% endif %}
-    
-  {% if page.interviewee02_name %}
-    <article class='episode_wrapper'>
-        <h5 class='episode_number'>#{{ page.interviewee02_episode_number }}</h5>
-        <h2 class='keywords'>{{ page.interviewee02_keywords }}</h2>
-        <h3 class='interviewee_name'>{{ page.interviewee02_name }}
-          <span class='episode_sub_info'>&nbsp| {{ page.interviewee02_episode_length }} Minutes</span>
-          <span class='episode_sub_info'>&nbsp| Audio Quality: {{ page.interviewee02_episode_audio_quality }}</span>
-          <a class='episode_sub_info show_note_link'
-            target='_blank' 
-            href='{{ page.interviewee02_episode_shownotes }}'> &nbsp| Show Notes  &rarr;</a>
-        </h3>
-
-				<iframe src="https://player.vimeo.com/video/{{page.interviewee02_vimeo_id}}?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-    </article>
-  {% endif %}
-    
-  {% if page.interviewee03_name %}
-    <article class='episode_wrapper'>
-        <h5 class='episode_number'>#{{ page.interviewee03_episode_number }}</h5>
-        <h2 class='keywords'>{{ page.interviewee03_keywords }}</h2>
-        <h3 class='interviewee_name'>{{ page.interviewee03_name }}
-          <span class='episode_sub_info'>&nbsp| {{ page.interviewee03_episode_length }} Minutes</span>
-          <span class='episode_sub_info'>&nbsp| Audio Quality: {{ page.interviewee03_episode_audio_quality }}</span>
-          <a class='episode_sub_info show_note_link' 
-            target='_blank' 
-            href='{{ page.interviewee03_episode_shownotes }}'>&nbsp| Show Notes &rarr; </a>
-        </h3>
-
-				<iframe src="https://player.vimeo.com/video/{{page.interviewee03_vimeo_id}}?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-    </article>
-  {% endif %}
-    
-  {% if page.interviewee04_name %}
-    <article class='episode_wrapper'>
-        <h5 class='episode_number'>#{{ page.interviewee04_episode_number }}</h5>
-        <h2 class='keywords'>{{ page.interviewee04_keywords }}</h2>
-        <h3 class='interviewee_name'>{{ page.interviewee04_name }}
-          <span class='episode_sub_info'>&nbsp| {{ page.interviewee04_episode_length }} Minutes</span>
-          <span class='episode_sub_info'>&nbsp| Audio Quality: {{ page.interviewee04_episode_audio_quality }}</span>
-          <a class='episode_sub_info show_note_link' 
-            target='_blank' 
-            href='{{ page.interviewee04_episode_shownotes }}'>&nbsp| Show Notes &rarr; </a>
-        </h3>
-
-				<iframe src="https://player.vimeo.com/video/{{page.interviewee04_vimeo_id}}?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-    </article>
-  {% endif %}
-    
-  {% if page.interviewee05_name %}
-    <article class='episode_wrapper'>
-        <h5 class='episode_number'>#{{ page.interviewee05_episode_number }}</h5>
-        <h2 class='keywords'>{{ page.interviewee05_keywords }}</h2>
-        <h3 class='interviewee_name'>{{ page.interviewee05_name }}
-          <span class='episode_sub_info'>&nbsp| {{ page.interviewee05_episode_length }} Minutes</span>
-          <span class='episode_sub_info'>&nbsp| Audio Quality: {{ page.interviewee05_episode_audio_quality }}</span>
-          <a class='episode_sub_info show_note_link' 
-            target='_blank' 
-            href='{{ page.interviewee05_episode_shownotes }}'>&nbsp| Show Notes &rarr;</a>
-        </h3>
-
-				<iframe src="https://player.vimeo.com/video/{{page.interviewee05_vimeo_id}}?color=c9ff23" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
-    </article>
-  {% endif %}
-
-  </div>
-{% endif %}
-
-<article class="post-content">
-  {{ content }}
-</article>
+  
+  <article class="post-content">
+    {{ content }}
+  </article>
 
 </div>

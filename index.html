@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
-
 <div class="home">
   <ul class="post-list">
     {% for post in paginator.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <h3 class='list-keywords'>{{ post.excerpt }}</h3>
-    </li>
+      <li>
+        <article>
+		    {% include article_header_index.html %}
+
+        {% if post.interviewee01_vimeo_id %}  
+          {% include vimeo_iframe_index.html %}
+        {% endif %}  
+        
+        {% if post.interviewee01_SC_id %}  
+          {% include soundcloud_iframe_index.html %}
+        {% endif %}
+        </article>
+      </li>
     {% endfor %}
   </ul>
 </div>

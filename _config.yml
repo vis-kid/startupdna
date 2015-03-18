@@ -1,13 +1,13 @@
 # Site settings
 
-title: "| Blog "  
+title: "Startup DNA"  
 
 email: your-email@domain.com
 
 description: > # this means to ignore newlines until "baseurl:"
   Official blog for the “Between | Screens” micropodcast. Knowledge bombs from prolific designers and developers
 
-paginate: 5
+paginate: 7
 paginate_path: "/page/:num"
 
 permalink: pretty

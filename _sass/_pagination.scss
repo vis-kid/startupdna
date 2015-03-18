@@ -12,8 +12,8 @@
     margin-left: 0px;
   }
   &:hover {
-    border-bottom: 1px solid $red;
-    color: $red;
+    border-bottom: 1px solid $light_blue;
+    color: $light_blue;
   }
 }
 
@@ -29,8 +29,8 @@ a.active_paginator_text {
   margin-right: 7px;
   margin-left: 7px;
   &:hover {
-    color: $red;
-    border-bottom: 1px solid $red;
+    color: $light_blue;
+    border-bottom: 1px solid $light_blue;
   }
   @include media-query($on-palm) {
     font-size: 26px;
@@ -44,8 +44,8 @@ a.active_paginator_text {
 a.home_arrow, a.end_of_list_arrow {
   font-size: 26px;
   &:hover {
-    border-bottom: 1px solid $red;
-    color: $red;
+    border-bottom: 1px solid $light_blue;
+    color: $light_blue;
   }
 }
 
