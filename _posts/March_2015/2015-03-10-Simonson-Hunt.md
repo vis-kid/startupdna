@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast_audio
 date: 2015-03-10 20:05:00
 title: "Mark Simonson | Proxima Nova"
 

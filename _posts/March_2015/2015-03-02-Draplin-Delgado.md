@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast_video
 date: 2015-03-02 20:05:00
 
 title: "Aaron Draplin | DDC"
@@ -8,7 +8,7 @@ excerpt: Junking | Research | Field Notes | Masters | Nectar
 
 interviewee01_episode_number: 63
 interviewee01_SC_id: 
-interviewee01_SC_mini_id: 196166926
+interviewee01_SC_mini_id: 
 interviewee01_name: Aaron Draplin
 interviewee01_episode_length: 15
 interviewee01_episode_audio_quality: Good
@@ -17,6 +17,7 @@ interviewee01_episode_shownotes: http://betweenscreens.fm/episodes/63
 interviewee01_keywords: Junking | Research | Field Notes | Masters | Nectar
 interviewee01_vimeo_id: 87832276 
 ---
+
 **Questions:**<br>
 
 - What are your favorite programming languages and frameworks?

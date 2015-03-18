@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: podcast_video
 date: 2015-03-09 20:05:00
 
 title: "Randy J. Hunt | Etsy"
