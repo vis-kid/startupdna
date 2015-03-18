@@ -8,7 +8,9 @@ layout: default
     <h1 class="post-title page-title">{{ page.title }}</h1>
   </header>
   
+  {% if page.folder_image_path %}
 	<img src="/assets/transcriptions/{{page.folder_image_path}}" alt="{{page.image_alt}}">
+  {% endif %}
 
   {% if page.interviewee01_SC_mini_id %}
     {% include soundcloud_mini_iframe_post.html %}

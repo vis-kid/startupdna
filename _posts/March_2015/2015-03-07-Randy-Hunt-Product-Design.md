@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: transcription
 title:  "Transcription | Randy J. Hunt | Product design"
 date:   2015-03-07 19:05:00
 excerpt: '( 7 min read )'
