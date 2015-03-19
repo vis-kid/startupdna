@@ -63,19 +63,19 @@ a.site-title {
     }
 // Gaps between nav items, but not on the first one
     &:not(:first-child) {
-    margin-left: 32px;
-    margin-right: -2px;
+      margin-left: 32px;
+      margin-right: -2px;
     }
     @include media-query($on-palm) {
       &:hover {
         color: $light_blue;
         border-bottom: none;
+				display: none;
       }
     }
   }
   @include media-query($on-palm) {
-    margin-top: 19px;
-    background-color: $background-color;
+    margin-top: -180px;
     border-radius: 5px;
     text-align: right;
     .menu-icon {
@@ -86,10 +86,10 @@ a.site-title {
       line-height: 0;
       text-align: center;
       > svg {
-        width: 18px;
-        height: 15px;
+        width: 25px;
+        height: 20px;
         path {
-          fill: $grey-color-dark;
+          fill: white;
         }
       }
     }
@@ -108,7 +108,13 @@ a.site-title {
 }
 
 .trigger {
-  margin-top: 4px;
+  margin-top: 7px;
+  @media(min-width: 600px) and (max-width: 675px) { 
+    margin-top: -171px;
+	}
+  @media(min-width: 676px) and (max-width: 857px) { 
+    margin-top: -60px;
+	}
 }
 
 a.page-link.rss-subscribe {
