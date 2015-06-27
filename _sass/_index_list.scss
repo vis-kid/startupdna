@@ -41,14 +41,45 @@
   }
 }
 
+@mixin border-animation-prep {
+  position: relative;
+	text-decoration: none;
+}
+
+@mixin border-animation-before($border-size, $speed) {
+  content: "";
+	position: absolute;
+	width: 100%;
+	height:$border-size;
+	bottom: 0;
+	left: 0;
+	background-color: $light_blue;
+	visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all $speed ease-in-out 0s;
+  transition: all $speed ease-in-out 0s;
+}
+
+@mixin border-animation-hover-before {
+  visibility: visible;
+ -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 .post-link {
+  @include border-animation-prep;
   font-size: 30px;
   line-height: 1.25;
   color: $light_blue;
-  &:hover {
-    color: $light_blue;
-    border-bottom: 2px solid $light_blue;
-  }
+}
+
+.post-link:before {
+  @include border-animation-before(2px, 0.55s);
+}
+
+.post-link:hover:before {
+  @include border-animation-hover-before;
 }
 
 h3.list-keywords {
