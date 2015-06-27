@@ -53,14 +53,20 @@ a.site-title {
   .menu-icon {
     display: none;
   }
+  .page-link:before {
+    @include border-animation-before(1px, 0.4s);
+  }
+ 
+  .page-link:hover:before {
+    @include border-animation-hover-before;
+  }
+
   .page-link {
+    @include border-animation-prep;
     color: $light_blue;
     font-weight: 400;
     font-size: 20px;
     line-height: $base-line-height;
-    &:hover {
-      border-bottom: 1px solid $light_blue
-    }
 // Gaps between nav items, but not on the first one
     &:not(:first-child) {
       margin-left: 32px;
