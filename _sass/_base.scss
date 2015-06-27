@@ -2,6 +2,7 @@ $light_blue:       darken(#80ABF4, 15%);
 $light_blue:       #3B7DEE;
 $light_blue:       #426195;
 $light_green:      #1AE595;
+$light_green:      #44C8C0;
 
 /**
  * Reset some basic elements
@@ -85,9 +86,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $light_blue;
   text-decoration: none;
-  &:hover {
-    color: darken($light_blue, 15%);
-  }
 }
 
 /**

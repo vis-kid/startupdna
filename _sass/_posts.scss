@@ -57,9 +57,10 @@ h2.keywords {
 
 h3.interviewee_name {
   color: $light_blue;
+  color: $light_green;
   font-style: italic;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 a.show_note_link {
@@ -74,13 +75,13 @@ span.episode_sub_info, .episode_sub_info {
   font-style: normal;
   display: inline;
   margin-top: 1px;
+  line-height: 140%;
   &::first-letter {
     display: hide;
     color: white;
     margin-left: -18px;
   }
   @include media-query($on-palm) {
-    display: block;
   }
 }
 
@@ -102,13 +103,19 @@ article.post-content {
 
 .post .post-meta-small {
   font-size: 18px;
-  margin-top: 33px;
+  margin-top: 105px;
   margin-bottom: 1px;
   color: lighten($grey-color, 20%);
 }
 
 #post_podcast_link {
 	&:hover {
+    border-bottom: 1px solid $light_blue;
+	}
+}
+
+.post a {
+  &:hover {
     border-bottom: 1px solid $light_blue;
 	}
 }
