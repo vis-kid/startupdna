@@ -32,39 +32,13 @@
     margin-bottom: 49px;
   }
   &:first-child {
-    margin-top: 33px;
+    margin-top: 79px;
   }
   &:last-child {
     border-bottom: none;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
-}
-
-@mixin border-animation-prep {
-  position: relative;
-	text-decoration: none;
-}
-
-@mixin border-animation-before($border-size, $speed) {
-  content: "";
-	position: absolute;
-	width: 100%;
-	height:$border-size;
-	bottom: 0;
-	left: 0;
-	background-color: $light_blue;
-	visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all $speed ease-in-out 0s;
-  transition: all $speed ease-in-out 0s;
-}
-
-@mixin border-animation-hover-before {
-  visibility: visible;
- -webkit-transform: scaleX(1);
-  transform: scaleX(1);
 }
 
 .post-link {
@@ -100,8 +74,4 @@ span.post-meta {
 
 .video_preview {
   margin-bottom: 15px;
-}
-
-.page-content {
-  margin-top: 100px;
 }
