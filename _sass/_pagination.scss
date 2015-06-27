@@ -3,7 +3,16 @@
   margin-bottom: 46px;
 }
 
+.pagination a:before {
+  @include border-animation-before(1px, 0.25s);
+}
+
+.pagination a:hover:before {
+  @include border-animation-hover-before;
+}
+
 .pagination a {
+  @include border-animation-prep;
   font-size: 18px;
   margin-left: 7px;
   margin-right: 7px;
@@ -12,7 +21,6 @@
     margin-left: 0px;
   }
   &:hover {
-    border-bottom: 1px solid $light_blue;
     color: $light_blue;
   }
 }
@@ -30,7 +38,6 @@ a.active_paginator_text {
   margin-left: 7px;
   &:hover {
     color: $light_blue;
-    border-bottom: 1px solid $light_blue;
   }
   @include media-query($on-palm) {
     font-size: 26px;
@@ -44,7 +51,6 @@ a.active_paginator_text {
 a.home_arrow, a.end_of_list_arrow {
   font-size: 26px;
   &:hover {
-    border-bottom: 1px solid $light_blue;
     color: $light_blue;
   }
 }
