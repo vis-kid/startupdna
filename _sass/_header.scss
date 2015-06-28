@@ -1,45 +1,14 @@
-.site-header {
-  border-top: 2px solid white;
-	background-color: $light_blue;
-// Positioning context for the mobile navigation icon
-  position: relative;
-	border-bottom: 2px solid darken($light_blue, 10%);
-}
-
-.site-header .wrapper {
-  margin-top: 20px;
-	height: 80px;
-  max-width: 800px;
-}
-
-$icon-font-name: ribbon;
-
-a.site-title {
-  text-decoration: none;
-  color: white;
-  @font-face {
-    font-family: 'Ribbon';
-    src: url(asset_path('fonts/#{$icon-font-name}.eot'));
-    src: url(asset_path('fonts/#{$icon-font-name}.woff')) format('woff'),
-         url(asset_path('fonts/#{$icon-font-name}.ttf')) format('truetype'),
-         url(asset_path('fonts/#{$icon-font-name}.svg#glyphicons-halflingsregular')) format('svg');
-  }
-  &:hover {
-    opacity: 0.85;
-  }
-}
-
-.site-title {
-  font-size: 95px;
   //text-align: center;
   line-height: 110px;
   font-family: Ribbon;
   letter-spacing: -1px;
-  margin-bottom: 0px;
-  margin-top: -102px;
-  margin-left: -6px;
-  padding-left: $spacing-unit; 
-  padding-top: 59px;
+  margin:
+    top: -102px;
+    bottom: 0px;
+    left: -6px;
+  padding:
+    top: 59px;
+    left: $spacing-unit; 
   float: left;
   @media(max-width: 677px) { 
     display: none;
@@ -51,8 +20,9 @@ a.site-title {
 
 .site-nav {
   float: right;
-  margin-top: 0px;
-	margin-right: 33px;
+  margin:
+    top: 0px;
+    right: 33px;
   .menu-icon {
     display: none;
   }
@@ -67,13 +37,15 @@ a.site-title {
   .page-link {
     @include border-animation-prep;
     color: $light_blue;
-    font-weight: 400;
-    font-size: 20px;
+    font:
+      weight: 400;
+      size: 20px;
     line-height: $base-line-height;
 // Gaps between nav items, but not on the first one
     &:not(:first-child) {
-      margin-left: 32px;
-      margin-right: -2px;
+      margin:
+        left: 32px;
+        right: -2px;
     }
     @include media-query($on-palm) {
       &:hover {
