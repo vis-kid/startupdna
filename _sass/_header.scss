@@ -1,9 +1,9 @@
 .site-header {
   border-top: 2px solid white;
-	background-color: #3C7EEE;
+	background-color: $light_blue;
 // Positioning context for the mobile navigation icon
   position: relative;
-	border-bottom: 2px solid darken(#3C7EEE, 20%);
+	border-bottom: 2px solid darken($light_blue, 10%);
 }
 
 .site-header .wrapper {
