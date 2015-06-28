@@ -15,8 +15,8 @@ interviewee01_keywords: Q&A | &#35;02 | Improve | Design work | College | Idols 
 ---
 **Sponsors:**<br>
 
-- Draplin Design Co.
-- Field Notes
+- [Draplin Design Co.](www.github.com)
+- [Field Notes](www.github.com)
 
 **Questions:**<br>
 
