@@ -30,7 +30,7 @@ a.site-title {
 }
 
 .site-title {
-  font-size: 90px;
+  font-size: 95px;
   //text-align: center;
   line-height: 110px;
   font-family: Ribbon;
@@ -41,6 +41,9 @@ a.site-title {
   padding-left: $spacing-unit; 
   padding-top: 59px;
   float: left;
+  @media(max-width: 677px) { 
+    display: none;
+	}
   @include media-query($on-laptop) {
     margin-left: 0px;
   }
@@ -48,7 +51,7 @@ a.site-title {
 
 .site-nav {
   float: right;
-  margin-top: 60px;
+  margin-top: 0px;
 	margin-right: 33px;
   .menu-icon {
     display: none;
@@ -116,7 +119,7 @@ a.site-title {
 .trigger {
   margin-top: 7px;
   @media(min-width: 600px) and (max-width: 675px) { 
-    margin-top: -171px;
+    margin-top: 6px;
 	}
   @media(min-width: 676px) and (max-width: 857px) { 
     margin-top: -60px;
